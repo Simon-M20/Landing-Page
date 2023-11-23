@@ -1,0 +1,202 @@
+.Footer__container {
+    background: var(--color-main-bg);
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Footer__logo_container {
+    width: 100%;
+}
+
+.Footer__logo {
+    color: var(--color-brown);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-title);
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 73.529% */
+    letter-spacing: 2px;
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.Footer__boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Footer__Nav_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 60%; */
+}
+
+.Footer__Nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    flex: 1 0 0;
+    width: 135px;
+    max-width: 135px;
+}
+
+.Footer__Nav_title {
+    color: var(--color-brown);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 120% */
+    letter-spacing: -0.2px;
+}
+
+.Footer__Nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Footer__Nav_list {
+    color: var(--color-text);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+}
+
+.Footer__figure_container {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 235px;
+}
+
+.Footer__figure {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.Footer__img {
+    height: 182px;
+    width: 100%;
+    max-width: 242.094px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Footer__figcaption {
+    color: var(--color-text);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+}
+
+.Footer__Social_container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Footer__Social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer__Social_figure {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.Footer__bottom {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Footer__small {
+    color: #706458b3;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+}
+
+.Footer__bottom_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 32px;
+}
+@media only screen and (min-width: 1020px) {
+    .Footer__container {
+        padding: 70px 0 60px;
+        gap: 48px;
+    }
+
+    .Footer__logo_container {
+        width: auto;
+    }
+
+    .Footer__logo {
+        text-align: left;
+    }
+
+    .Footer__boxes {
+        flex-direction: row;
+        gap: 60px;
+        width: 90%;
+    }
+
+    .Footer__Nav_container {
+        gap: 48px;
+        flex-direction: row;
+    }
+
+    .Footer__Nav ul {
+        gap: 12px;
+    }
+
+    .Footer__Social_container {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .Footer__bottom {
+        gap: 30px;
+    }
+
+    .Footer__bottom_container {
+        flex-direction: row;
+        gap: 0;
+    }
+}

@@ -1,0 +1,23 @@
+.Slides__container {
+    width: 100%;
+    /* margin: 0 auto; */
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.Slides__figure {
+    height: 80px;
+    /* background-color: lightgreen; */
+    width: 250px;
+    height: 400px;
+    align-self: stretch;
+}
+
+.Slides__image {
+    background: lightgray 50% / cover no-repeat, #d9d9d9;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

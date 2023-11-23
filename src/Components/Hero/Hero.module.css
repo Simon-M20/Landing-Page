@@ -1,0 +1,188 @@
+.hero__section {
+    background-color: unset;
+    height: 100%;
+    max-height: 100%;
+    border-bottom: solid 1px var(--color-text);
+    display: unset;
+    width: 100%;
+    position: relative;
+}
+
+.hero__container {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero__div {
+    position: relative;
+    top: 17%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+:is(.hero__span, .hero__title) {
+    color: var(--color-white);
+}
+
+.hero__title {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-title);
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    font-size: 35px;
+    line-height: 40px; /* 114.286% */
+    letter-spacing: -0.3px;
+}
+
+.hero__span {
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero__text {
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-style: normal;
+    font-weight: 300;
+    color: #f7f8f9;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px; /* 138.889% */
+    padding-inline: 8px;
+}
+
+.hero__figure_icon {
+    border-radius: 100px;
+    border: 2px solid var(--color-color-white, #fff);
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 20px 17px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease-out 0.3s;
+}
+
+.hero__figure_icon:hover {
+    border: 2px solid #534b42;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__figure {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    object-position: center;
+}
+
+@media only screen and (min-width: 1020px) {
+    .hero__section {
+        background-color: #f3eee8;
+        height: 100%;
+        max-height: 100vh;
+        border-bottom: solid 1px var(--color-text);
+        display: flex;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    .hero__container {
+        display: flex;
+        padding: 24px 85px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+        flex: 1 0 0;
+        align-self: stretch;
+        width: 50%;
+    }
+
+    .hero__div {
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        top: unset;
+        align-items: flex-start;
+    }
+
+    :is(.hero__span, .hero__title) {
+        color: var(--color-main);
+    }
+
+    .hero__title {
+        font-size: 50px;
+        line-height: 70px; /* 140% */
+        letter-spacing: -0.4px;
+        max-width: 420px;
+        text-align: left;
+    }
+
+    .hero__span {
+        color: var(--color-main, #a06056);
+        font-family: var(--font-text);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: unset;
+    }
+
+    .hero__text {
+        font-size: 22px;
+        line-height: 30.8px; /* 140% */
+        color: var(--color-text, #706458e6);
+        text-align: left;
+        padding-inline: unset;
+    }
+
+    .hero__figure {
+        width: 50%;
+        position: initial;
+        top: unset;
+        z-index: 1;
+        height: 100%;
+        opacity: 1;
+    }
+
+    .hero__figure_icon {
+        border-radius: 100px;
+        border: 2px solid var(--color-main, #a06056);
+    }
+
+    .hero__figure_icon:hover {
+        border: 2px solid #534b42;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}

@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+:root {
+    --color-main: #a06056;
+    --color-text: #706458;
+    --color-main-bg: #f3eee8;
+    --color-brown: #534b42;
+    --color-white: #fff;
+    --color-black: #121212;
+    --font-title: "Merriweather", serif;
+    --font-text: "Varta", sans-serif;
+    --font-karla: "Karla", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 10px;
+    height: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+    background: var(--color-brownb);
+    scroll-behavior: smooth;
+    border-radius: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: var(--color-main);
+    border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-main);
+    border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-slide {
+    width: fit-content !important;
+}
+
+.swiper-android .swiper-slide,
+.swiper-ios .swiper-slide,
+.swiper-wrapper {
+    transform: translate3d(-125px, 0, 0);
+    animation: 9s linear 1s infinite alternate carousel;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(-440%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    @keyframes carousel {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }

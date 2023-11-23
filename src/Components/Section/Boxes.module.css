@@ -1,0 +1,21 @@
+.Boxes__subtitles {
+    color: var(--color-main, #a06056);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 120% */
+    letter-spacing: -0.2px;
+    padding-bottom: 12px;
+}
+
+.Boxes__subtext {
+    color: var(--color-text, #706458e6);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+}
